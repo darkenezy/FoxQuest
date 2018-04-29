@@ -1,0 +1,23 @@
+{
+  "name": "Тест",
+  "quest": [
+    {
+      "type": "text",
+      "message": "Вспушит она свои бока,\nСвои четыре уголка,\nИ тебя, как ночь настанет,\nВсе равно к себе притянет."
+    },
+    {
+      "type": "wait_for_text",
+      "text": "Подушка",
+      "mistake":
+        {
+            "type": "text",
+            "message": "Ошибка"
+        },
+      "strict": false
+    },
+    {
+      "type": "text",
+      "message": "Да"
+    }
+  ]
+}

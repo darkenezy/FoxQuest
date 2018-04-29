@@ -1,0 +1,34 @@
+{
+  "name": "Пример",
+  "quest": [
+    {
+      "type": "image",
+      "url": "http://risovach.ru/thumb/upload/240c240/2017/02/generator/oo_136389863_orig_.jpg?ejv9p"
+    },
+    {
+      "type": "text",
+      "message": "Иди в соседнюю комнату!"
+    },
+    {
+      "type": "location",
+      "location":
+        {
+          "lat": 55.799921,
+          "long": 37.786375
+        }
+    },
+    {
+      "type": "wait_for_location",
+      "location":
+        {
+          "lat": 55.799921,
+          "long": 37.786375
+        },
+      "distance": 15
+    },
+    {
+      "type": "text",
+      "message": "Ура! Молодец!"
+    }
+  ]
+}
