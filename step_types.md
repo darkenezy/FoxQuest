@@ -4,7 +4,7 @@ Types
 Simple types:
 ----------------
 `text` - sends text
-```
+```json
 {
   "type": "text",
   "message": "Привет!"
@@ -14,7 +14,7 @@ Simple types:
 ---
 
 `image` - sends image
-```
+```json
 {
   "type": "image",
   "url": "http://risovach.ru/thumb/upload/240c240/2017/02/generator/oo_136389863_orig_.jpg?ejv9p"
@@ -24,7 +24,7 @@ Simple types:
 ---
 
 `video` - sends video
-```
+```json
 {
   "type": "image",
   "url": "link_to_video"
@@ -34,7 +34,7 @@ Simple types:
 ---
 
 `location` - sends location
-```
+```json
 {
   "type": "location",
   "location":
@@ -48,7 +48,7 @@ Simple types:
 Types wait\_for\_\*
 ----------------
 Every wait\_for\_\* type can have `mistake` field with message of simple type which sends when user fails wait\_for\_\* condition.
-```
+```json
 {
   "type": "wait_for_text",
   "text": "ответ",
@@ -66,7 +66,7 @@ Every wait\_for\_\* type can have `mistake` field with message of simple type wh
 If `location` is not specified - waits for any location.
 
 If `distance` is not specified - `distance` is 15.
-```
+```json
 {
   "type": "wait_for_location",
   "location":
@@ -82,7 +82,7 @@ If `distance` is not specified - `distance` is 15.
 `wait_for_text` - waits for user's text to become `text`. If `strict` is true, check is case sensitive.
 
 If `strict` is not specified - `strict` is false.
-```
+```json
 {
   "type": "wait_for_text",
   "text": "Подушка",
